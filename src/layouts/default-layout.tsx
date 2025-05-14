@@ -4,7 +4,7 @@ import { Footer } from "../components/footer";
 
 export const DefaultLayout = () => {
   return (
-    <div className="w-full h-screen font-primary">
+    <div className="w-full h-screen font-primary bg-black">
       <Header />
       <div className="pt-[70px] min-h-[calc(100%-100px)] scroll-smooth">
         <Outlet />
