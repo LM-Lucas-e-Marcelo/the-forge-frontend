@@ -5,7 +5,7 @@ import { KnowCard } from "./know-card";
 export const Know = () => {
   return (
     <Container invert>
-      <h1 className="text-white text-2xl font-bold mb-10 text-center">
+      <h1 className="text-white text-5xl font-bold mb-10 text-center">
         Saiba mais sobre tudo que acontecerá <br /> na imersão de 2 dias de
         evento
       </h1>
