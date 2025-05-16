@@ -2,6 +2,9 @@ import { Hero } from "../components/hero";
 import { Know } from "../components/know";
 import { Location } from "../components/location";
 import { Speakers } from "../components/speakers";
+import { Testimonials } from "../components/testimonials";
+import { Tickets } from "../components/tickets";
+import { YouReady } from "../components/you-ready";
 
 export const Home = () => {
   return (
@@ -10,6 +13,9 @@ export const Home = () => {
       <Know />
       <Speakers />
       <Location />
+      <YouReady />
+      <Testimonials />
+      <Tickets />
     </div>
   );
 };
