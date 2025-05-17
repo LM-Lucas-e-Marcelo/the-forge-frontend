@@ -6,7 +6,7 @@ export const Testimonials = () => {
     <Container>
       <div className="w-full flex flex-col justify-center items-center">
         <section className="text-white flex flex-col gap-4">
-          <h1 className="text-5xl text-center">
+          <h1 className="text-5xl text-center font-tertiary">
             Veja o que dizem pessoas que foram <br /> forjadas por Zé Alves:
           </h1>
           <p className="text-center text-xl">PARA TER RESULTADOS MELHORES</p>
