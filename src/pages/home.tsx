@@ -1,6 +1,8 @@
 import { Hero } from "../components/hero";
+import { HowIKnow } from "../components/how-i-know";
 import { Know } from "../components/know";
 import { Location } from "../components/location";
+import { Space } from "../components/space";
 import { Speakers } from "../components/speakers";
 import { Testimonials } from "../components/testimonials";
 import { Tickets } from "../components/tickets";
@@ -11,10 +13,12 @@ export const Home = () => {
     <div className="w-full flex flex-col">
       <Hero />
       <Know />
+      <HowIKnow />
       <Speakers />
+      <Space />
+      <Testimonials />
       <Location />
       <YouReady />
-      <Testimonials />
       <Tickets />
     </div>
   );
