@@ -20,7 +20,7 @@ export const KnowCard = ({
       <p className="mt-10 text-lg text-zinc-900">{text}</p>
       <section className="flex flex-col mt-4 text-zinc-900 font-extrabold text-lg">
         {benefits.map((benefit) => (
-          <span key={benefit}>- {benefit}</span>
+          <span key={benefit}>• {benefit}</span>
         ))}
       </section>
     </div>
