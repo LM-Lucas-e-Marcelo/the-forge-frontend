@@ -1,13 +1,21 @@
+import { useNavigate } from "react-router";
 import { Container } from "./container";
 import { Button } from "./form/button";
 import { Input } from "./form/input";
 
 export const YouReady = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => navigate("/tickets");
+
   return (
     <Container invert>
-      <div className="w-full flex items-center justify-center flex-col gap-4 my-10">
+      <div
+        id="iready"
+        className="w-full flex items-center justify-center flex-col gap-4 my-10"
+      >
         <section className="text-white">
-          <h1 className="text-5xl">PREPARADO PARA A FORJA?</h1>
+          <h1 className="text-5xl font-tertiary">PREPARADO PARA A FORJA?</h1>
           <p className="text-center text-2xl">
             Insira as informações corretamente
           </p>
@@ -17,7 +25,9 @@ export const YouReady = () => {
             <Input placeholder="Nome Completo" />
             <Input placeholder="Seu Email" />
             <Input placeholder="Seu WhatsApp" />
-            <Button>Quero ser forjado</Button>
+            <Button color="secondary" onClick={handleNavigate}>
+              Quero ser forjado
+            </Button>
           </form>
         </div>
       </div>
