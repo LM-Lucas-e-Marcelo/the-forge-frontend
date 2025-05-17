@@ -1,8 +1,13 @@
 export const Location = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-black to-primary pt-20">
+    <div
+      id="location"
+      className="w-full bg-gradient-to-b from-black to-primary pt-20"
+    >
       <div className="flex flex-col gap-3 text-center">
-        <h1 className="text-5xl font-bold text-white">Local do evento</h1>
+        <h1 className="text-5xl font-bold text-white font-tertiary">
+          Local do evento
+        </h1>
         <p className="text-2xl text-gray-300">
           Firenze Business Park - Av. do Comércio, 965 - Pacheco, Palhoça - SC,
           88134-852
