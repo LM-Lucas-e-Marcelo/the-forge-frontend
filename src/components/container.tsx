@@ -2,15 +2,15 @@ import type { PropsWithChildren } from "react";
 import { tv, type VariantProps } from "tailwind-variants";
 
 const containerStyles = tv({
-  base: "max-w-[1440px] bg-red-500 mx-auto p-10 relative",
+  base: "relative",
   variants: {
     invert: {
       true: "bg-gradient-to-b from-black to-primary",
       false: "bg-gradient-to-b from-primary to-black",
     },
     withoutPadding: {
-      true: "px-0",
-      false: "px-10",
+      true: "p-0",
+      false: "p-10",
     },
   },
 
@@ -22,10 +22,14 @@ const containerStyles = tv({
 
 type ContainerProps = VariantProps<typeof containerStyles> & PropsWithChildren;
 
-export const Container = ({ children, invert }: ContainerProps) => {
+export const Container = ({
+  children,
+  invert,
+  withoutPadding,
+}: ContainerProps) => {
   return (
-    <div className="w-fullbg-black">
-      <div className={containerStyles({ invert })}>{children}</div>
+    <div className={containerStyles({ invert, withoutPadding })}>
+      <div className="max-w-[1440px] mx-auto w-full">{children}</div>
     </div>
   );
 };
