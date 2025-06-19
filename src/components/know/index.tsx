@@ -1,27 +1,28 @@
 import { KNOW_CARDS } from "../../constants/know-constants";
-import { Container } from "../container";
+
 import { KnowCard } from "./know-card";
 
 export const Know = () => {
   return (
-    <Container invert>
-      <h1 className="text-white text-5xl my-10 text-center font-tertiary">
-        Saiba mais sobre tudo que acontecerá <br /> na imersão de 2 dias de
-        evento
-      </h1>
+    <div className="w-full bg-black px-10 py-30">
+      <div className="max-w-[1440px] mx-auto w-full">
+        <h1 className="text-white text-5xl my-10 text-center font-tertiary">
+          TUDO O QUE VOCÊ PRECISA <br /> PARA IR MAIS LONGE
+        </h1>
 
-      <div className="flex flex-row gap-4 flex-wrap items-center justify-center">
-        {KNOW_CARDS.map((card) => (
-          <KnowCard key={card.title} {...card} />
-        ))}
+        <div className="flex flex-row gap-4 flex-wrap items-center justify-center mt-20">
+          {KNOW_CARDS.map((card, index) => {
+            return (
+              <>
+                <KnowCard key={card.title} {...card} />
+                {index !== KNOW_CARDS.length - 1 && (
+                  <div className="h-[190px] w-[3px] bg-primary rounded-full" />
+                )}
+              </>
+            );
+          })}
+        </div>
       </div>
-
-      <p className="text-xl text-white mt-10 max-w-[700px] text-center mx-auto z-20">
-        Estes seis comportamentos não são apenas estratégias, mas sim pilares de
-        uma filosofia que eleva tanto o líder quanto sua empresa. Eles são as
-        pedras angulares no arco da conquista, sustentando uma estrutura que se
-        eleva em direção ao sucesso empreendedor.
-      </p>
-    </Container>
+    </div>
   );
 };
