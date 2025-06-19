@@ -1,15 +1,41 @@
+import { useEffect, useState } from "react";
+import { tv } from "tailwind-variants";
 import logo from "../assets/logo.png";
 import { NAV_BAR_ITEMS } from "../constants/nav-items";
 import { Button } from "./form/button";
 
+const header = tv({
+  base: "fixed top-0 left-0 right-0 z-60 transition-all px-4",
+  variants: {
+    scrolled: {
+      true: "bg-black/70 backdrop-blur-md py-2",
+      false: "pt-10 pb-2",
+    },
+  },
+});
+
 export const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleRedirectToTickets = () => {
-    window.open("#iready", "_self");
+    window.open(
+      "https://www.sympla.com.br/evento/a-forja-2025/2983812",
+      "_self"
+    );
   };
 
   return (
-    <header className="bg-black px-4 py-2 fixed top-0 left-0 right-0 z-60">
-      <div className="w-full flex h-[70px] items-center gap-[100px] max-w-[1440px] mx-auto px-[16px]">
+    <header className={header({ scrolled: isScrolled })}>
+      <div className="w-full flex h-[70px] items-center gap-[100px] mx-auto px-[16px]">
         <a href="/">
           <img src={logo} alt="Logo" width={150} />
         </a>
