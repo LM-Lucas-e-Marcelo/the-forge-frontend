@@ -1,0 +1,52 @@
+export const cardVariants = {
+  color: {
+    orange: {
+      root: "border-orange-600 bg-gradient-to-b from-orange-600/50 via-orange-600/30 to-black",
+      cardTitle: "text-primary",
+      lote: "text-primary",
+      unity: "text-primary",
+      cardPrice: "text-primary",
+      button: "bg-primary",
+    },
+    red: {
+      root: "border-red-500 bg-gradient-to-b from-red-500/50 via-red-500/30 to-black",
+      cardTitle: "text-red-500",
+      lote: "text-red-500",
+      unity: "text-red-500",
+      cardPrice: "text-red-500",
+      button: "bg-red-500",
+    },
+    gold: {
+      root: "border-yellow-600 bg-gradient-to-b from-yellow-600/50 via-yellow-600/30 to-black",
+      cardTitle: "text-yellow-600",
+      lote: "text-yellow-600",
+      unity: "text-yellow-600",
+      cardPrice: "text-yellow-600",
+      button: "bg-yellow-600",
+    },
+    blue: {
+      root: "border-blue-500 bg-gradient-to-b from-blue-500/50 via-blue-500/50 to-black",
+      cardTitle: "text-blue-500",
+      lote: "text-blue-500",
+      unity: "text-blue-500",
+      cardPrice: "text-blue-500",
+      button: "bg-blue-500",
+    },
+    gray: {
+      root: "border-zinc-400 bg-gradient-to-b from-zinc-400/50 via-zinc-400/50 to-black",
+      cardTitle: "text-zinc-400",
+      lote: "text-zinc-400",
+      unity: "text-zinc-400",
+      cardPrice: "text-zinc-400",
+      button: "bg-zinc-400",
+    },
+    black: {
+      root: "border-black bg-gradient-to-b from-zinc-900/50 to-black",
+      cardTitle: "text-white",
+      lote: "text-white",
+      unity: "text-white",
+      cardPrice: "text-white",
+      button: "bg-white text-black",
+    },
+  },
+};
