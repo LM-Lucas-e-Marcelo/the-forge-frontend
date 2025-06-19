@@ -2,27 +2,21 @@ type KnowCardProps = {
   title: string;
   subTitle: string;
   text: string;
-  benefits: string[];
 };
 
-export const KnowCard = ({
-  title,
-  subTitle,
-  text,
-  benefits,
-}: KnowCardProps) => {
+export const KnowCard = ({ title, subTitle, text }: KnowCardProps) => {
   return (
-    <div className="bg-gradient-to-b from-zinc-100 to-white text-white p-6 max-w-[400px]  rounded-2xl w-full min-h-[550px]">
-      <section className="w-full flex flex-col justify-center items-center">
-        <h1 className="text-2xl  z-10 font-extrabold text-primary">{title}</h1>
-        <p className="text-xl text-zinc-900 z-10 text-center ">{subTitle}</p>
-      </section>
-      <p className="mt-10 text-lg text-zinc-900">{text}</p>
-      <section className="flex flex-col mt-4 text-zinc-900 font-extrabold text-lg">
-        {benefits.map((benefit) => (
-          <span key={benefit}>• {benefit}</span>
-        ))}
-      </section>
+    <div className="text-white p-6 max-w-[400px] w-full flex items-center justify-center">
+      <div className="max-w-[300px] h-[2-0px] flex flex-col items-center gap-3">
+        <section className="w-full flex flex-col justify-center gap-3">
+          <div
+            className="text-xl z-10 text-white font-secondary"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+          <p className="text-lg text-primary z-10 font-secondary">{subTitle}</p>
+        </section>
+        <p className=" text-md text-white">{text}</p>
+      </div>
     </div>
   );
 };
