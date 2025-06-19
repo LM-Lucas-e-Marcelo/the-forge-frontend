@@ -4,7 +4,7 @@ import { SpeakerCard } from "./speaker-card";
 
 export const Speakers = () => {
   return (
-    <Container invert>
+    <Container>
       <span
         id="speakers"
         className="text-6xl font-bold text-white flex flex-col gap-3 text-center"
