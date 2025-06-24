@@ -15,7 +15,7 @@ export const Location = () => {
       </div>
       <div className="mt-10 flex justify-center">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.224708999683!2d-46.65164868502182!3d-23.55444958468145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58a7e4b5b5b9%3A0x9c8e7e8f6c9e7c7b!2sAlura%20-%20Educa%C3%A7%C3%A3o%20Online%20S.A.!5e0!3m2!1spt-BR!2sbr!4v1697031234567"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.670863213902!2d-48.672031324534125!3d-27.665653176206405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952735f3e51b19d9%3A0xb1483d09e8fe510e!2sFirenze%20Centro%20de%20Eventos!5e0!3m2!1spt-BR!2sbr!4v1750771014851!5m2!1spt-BR!2sbr"
           width="100%"
           height="600"
           style={{ border: 0 }}
