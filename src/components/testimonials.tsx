@@ -14,7 +14,7 @@ export const Testimonials = () => {
               className="rounded-lg"
               width="700"
               height="394"
-              src="https://www.youtube.com/embed/ZCCdaz4kdJQ?si=rsU3ANgOaGJqnvjg"
+              src="https://www.youtube.com/embed/6aOKS3vJ6wU?si=lyi8qIIkbvAWI4rp"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             />
