@@ -6,6 +6,7 @@ import { Speakers } from "../components/speakers";
 import { Testimonials } from "../components/testimonials";
 import { Tickets } from "../components/tickets";
 import { TicketsInformation } from "../components/tickets-information";
+import { WhatsappButton } from "../components/whatsapp-button";
 
 export const Home = () => {
   return (
@@ -18,6 +19,7 @@ export const Home = () => {
       <Location />
       <HowIKnow />
       <Tickets />
+      <WhatsappButton />
     </div>
   );
 };
