@@ -20,8 +20,8 @@ export const Footer = () => {
           Rua Firenze Business Park - Av. do Comércio, 965 - Pacheco, Palhoça -
           SC, 88134-852
         </p>
-        <p>CNPJ: 99.999.999/0001-99</p>
-        <p>48 99999-9999 / contato@aforja.com.br</p>
+        <p>CNPJ: 53.470.516/0001-66</p>
+        <p>Telefone: 11 97442-1689</p>
         <p>Todos os direitos reservados a Forja 2025.</p>
       </div>
     </div>
