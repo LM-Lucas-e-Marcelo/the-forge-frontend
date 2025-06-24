@@ -61,7 +61,12 @@ export const TicketCard = ({
               benefits.includes(benefit) ? "text-white" : "text-zinc-500"
             }
           >
-            ✓ {benefit}
+            {benefits.includes(benefit) ? (
+              "✓"
+            ) : (
+              <span className="text-xl font-secondary">×</span>
+            )}{" "}
+            {benefit}
           </li>
         ))}
       </ul>
