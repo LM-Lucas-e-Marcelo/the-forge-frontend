@@ -4,7 +4,7 @@ import { KnowCard } from "./know-card";
 
 export const Know = () => {
   return (
-    <div className="w-full bg-black px-10 py-30">
+    <div className="w-full bg-black px-10 py-30 bg-[url(/stage.webp)] bg-cover bg-center">
       <div className="max-w-[1440px] mx-auto w-full">
         <h1 className="text-white text-5xl my-10 text-center font-tertiary">
           TUDO O QUE VOCÊ PRECISA <br /> PARA IR MAIS LONGE
