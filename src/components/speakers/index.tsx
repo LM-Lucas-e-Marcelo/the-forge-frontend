@@ -12,14 +12,9 @@ export const Speakers = () => {
         <h1 className="mr-40 font-tertiary">Palestrantes</h1>
         <h1 className="ml-40 font-tertiary">Confirmados</h1>
       </span>
-      <div className="flex flex-wrap gap-4 mt-20 justify-center">
+      <div className="flex flex-col gap-6 mt-20 justify-center items-center">
         {SPEAKERS.map((speaker) => (
-          <SpeakerCard
-            key={speaker.name}
-            name={speaker.name}
-            position={speaker.position}
-            imgUrl={speaker.imgUrl}
-          />
+          <SpeakerCard key={speaker.name} {...speaker} />
         ))}
       </div>
     </Container>
