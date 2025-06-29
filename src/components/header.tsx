@@ -1,21 +1,31 @@
 import { useEffect, useState } from "react";
+import { FiX } from "react-icons/fi";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { tv } from "tailwind-variants";
 import logo from "../assets/logo.png";
 import { NAV_BAR_ITEMS } from "../constants/nav-items";
 import { Button } from "./form/button";
+import { MobileMenu } from "./mobile-menu";
 
 const header = tv({
   base: "fixed top-0 left-0 right-0 z-60 transition-all px-4",
   variants: {
     scrolled: {
       true: "bg-black/70 backdrop-blur-md py-2",
-      false: "pt-10 pb-2",
+      false: "pt-2 sm:pt-10 pb-2",
+    },
+    isOpen: {
+      true: "bg-black/90 backdrop-blur-md",
     },
   },
 });
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+  const handleToggleMobileMenu = () =>
+    setOpenMobileMenu((prevState) => !prevState);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +44,9 @@ export const Header = () => {
   };
 
   return (
-    <header className={header({ scrolled: isScrolled })}>
+    <header
+      className={header({ scrolled: isScrolled, isOpen: openMobileMenu })}
+    >
       <div className="w-full flex h-[70px] items-center gap-[100px] mx-auto px-[16px]">
         <a href="/">
           <img src={logo} alt="Logo" width={150} />
@@ -49,9 +61,22 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="flex ml-auto">
+          {openMobileMenu ? (
+            <button
+              onClick={handleToggleMobileMenu}
+              className="text-red-500 md:hidden"
+            >
+              <FiX size={30} />
+            </button>
+          ) : (
+            <button onClick={handleToggleMobileMenu} className="md:hidden">
+              <RxHamburgerMenu size={24} className="text-white" />
+            </button>
+          )}
           <Button onClick={handleRedirectToTickets}>Quero ser forjado</Button>
         </div>
       </div>
+      <MobileMenu isOpen={openMobileMenu} onClose={handleToggleMobileMenu} />
     </header>
   );
 };
