@@ -2,9 +2,9 @@ import logo from "../assets/logo.png";
 
 export const Hero = () => {
   return (
-    <div className="relative w-[177.78vh] h-screen md:w-screen md:h-[56.25vw] overflow-hidden">
+    <div className="relative h-screen md:w-screen md:h-[56.25vw] overflow-hidden">
       <iframe
-        className="absolute top-0 left-0 w-[177.78vh]  h-screen md:w-screen md:h-[56.25vw] object-cover pointer-events-none sm:"
+        className="absolute top-0 left-0 w-[177.78vh] h-screen md:w-screen md:h-[56.25vw] object-cover pointer-events-none sm:"
         src="https://www.youtube.com/embed/UWiwM-Ohp5I?autoplay=1&mute=1&controls=0&loop=1&playlist=UWiwM-Ohp5I&modestbranding=1&showinfo=0"
         title="YouTube video background"
         allow="autoplay; fullscreen"
