@@ -7,11 +7,6 @@ export const Footer = () => {
         <div className="flex gap-4">
           <img src={logo} alt="name" width={100} />
           <img src={logo} alt="name" width={100} />
-          <img src={logo} alt="name" width={100} />
-          <img src={logo} alt="name" width={100} />
-          <img src={logo} alt="name" width={100} />
-          <img src={logo} alt="name" width={100} />
-          <img src={logo} alt="name" width={100} />
         </div>
       </div>
       <div className="p-10 text-white">
