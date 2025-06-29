@@ -4,13 +4,13 @@ import zeImg from "../assets/ze.jpg";
 export const HowIKnow = () => {
   return (
     <Container>
-      <div className="flex w-full justify-around py-20 items-center">
+      <div className="flex w-full flex-col sm:flex-row justify-around py-20 items-center">
         <div className="flex flex-col gap-4 max-w-[600px]">
-          <h1 className="text-5xl text-white font-tertiary">
+          <h1 className="sm:text-5xl text-3xl text-white font-tertiary">
             Como eu sei disso? Bom, tive uma longa jornada antes de conseguir
             faturar 25 milhões por mês:
           </h1>
-          <section className="text-lg text-white flex flex-col gap-2 mt-10">
+          <section className="text-lg text-white flex flex-col gap-2 mt-10 sm:mb-0 mb-10">
             <span>• Equipe não batia meta.</span>
             <span>• Faturamento não aumentava.</span>
             <span>• Me sentia sobrecarregado e responsável por tudo.</span>
