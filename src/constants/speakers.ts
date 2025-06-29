@@ -2,7 +2,7 @@ import ze from "../assets/speakers/ze.png";
 import maria from "../assets/speakers/maria.png";
 import andre from "../assets/speakers/andre.png";
 import eron from "../assets/speakers/eron.png";
-import ana from "../assets/speakers/eron.png";
+import ana from "../assets/speakers/ana.png";
 import eduardo from "../assets/speakers/eduardo.png";
 import laercio from "../assets/speakers/laercio.png";
 
