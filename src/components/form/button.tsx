@@ -13,7 +13,7 @@ const defaultOptions = {
 };
 
 const buttonStyles = tv({
-  base: "pb-2 pt-3 px-3 text-zinc-900 uppercase rounded-md flex items-center justify-center gap-2 cursor-pointer",
+  base: "pb-2 pt-3 px-3 text-zinc-900 uppercase rounded-md sm:flex items-center justify-center gap-2 cursor-pointer hidden flex-row",
   variants: {
     color: {
       primary: "bg-white",
@@ -31,7 +31,7 @@ type ButtonProps = VariantProps<typeof buttonStyles> & ComponentProps<"button">;
 export const Button = ({ children, color, ...rest }: ButtonProps) => {
   return (
     <button className={buttonStyles({ color })} {...rest}>
-      <span className="mt-[-10px]">
+      <span className="mt-[-10px] ">
         <Lottie options={defaultOptions} isClickToPauseDisabled height={30} />
       </span>
       {children}
