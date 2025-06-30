@@ -12,7 +12,7 @@ const header = tv({
   base: "fixed top-0 left-0 right-0 z-60 transition-all px-4",
   variants: {
     scrolled: {
-      true: "  py-2",
+      true: "bg-black/70 backdrop-blur-md py-2",
       false: "pt-2 sm:pt-10 pb-2",
     },
     isOpen: {
