@@ -6,12 +6,13 @@ import logo from "../assets/logo.png";
 import { NAV_BAR_ITEMS } from "../constants/nav-items";
 import { Button } from "./form/button";
 import { MobileMenu } from "./mobile-menu";
+import { FinishModal } from "./finish-modal";
 
 const header = tv({
   base: "fixed top-0 left-0 right-0 z-60 transition-all px-4",
   variants: {
     scrolled: {
-      true: "bg-black/70 backdrop-blur-md py-2",
+      true: "  py-2",
       false: "pt-2 sm:pt-10 pb-2",
     },
     isOpen: {
@@ -21,8 +22,11 @@ const header = tv({
 });
 
 export const Header = () => {
+  const [openModal, setOpenModal] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+  const handleToggleModal = () => setOpenModal((prevState) => !prevState);
 
   const handleToggleMobileMenu = () =>
     setOpenMobileMenu((prevState) => !prevState);
@@ -37,9 +41,10 @@ export const Header = () => {
   }, []);
 
   const handleRedirectToTickets = () => {
+    handleToggleModal();
     window.open(
       "https://www.sympla.com.br/evento/a-forja-2025/2983812",
-      "_self"
+      "_blank"
     );
   };
 
@@ -77,6 +82,7 @@ export const Header = () => {
         </div>
       </div>
       <MobileMenu isOpen={openMobileMenu} onClose={handleToggleMobileMenu} />
+      <FinishModal isOpen={openModal} onClose={handleToggleModal} />
     </header>
   );
 };
