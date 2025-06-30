@@ -1,13 +1,11 @@
 import logo from "../assets/logo.png";
+import { Sponsors } from "./sponsors";
 export const Footer = () => {
   return (
     <div className="w-full bg-gradient-to-b from-black via-black to-zinc-900  border-t border-zinc-700">
       <div className="w-full flex flex-col gap-4 pt-10 items-center justify-center">
         <h1 className="text-white text-5xl font-tertiary">Patrocinadores</h1>
-        <div className="flex gap-4">
-          <img src={logo} alt="name" width={100} />
-          <img src={logo} alt="name" width={100} />
-        </div>
+        <Sponsors />
       </div>
       <div className="p-10 text-white">
         <img src={logo} alt="A Forja" width={200} />
