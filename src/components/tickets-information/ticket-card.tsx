@@ -24,6 +24,7 @@ type TicketCardProps = CardVariants & {
   price: string;
   perMounth: string;
   times: number;
+  handleToggleModal: () => void;
 };
 
 const { root, cardTitle, lote, unity, cardPrice, button } = card();
@@ -35,8 +36,10 @@ export const TicketCard = ({
   perMounth,
   times,
   color,
+  handleToggleModal,
 }: TicketCardProps) => {
   const handleNavigate = () => {
+    handleToggleModal();
     window.open(
       "https://www.sympla.com.br/evento/a-forja-2025/2983812/.",
       "_blank"
