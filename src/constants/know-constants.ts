@@ -6,8 +6,8 @@ export const KNOW_CARDS = [
   },
   {
     title: "Aprenda com os <br/> maiores do mercado",
-    subTitle: "+10 Palestrantes",
-    text: "com conteúdos e métodos validados por milhares de profissionais do mercado.",
+    subTitle: "+ de 10 temas",
+    text: "escolhidos com base na experiência de palestrantes, mentores e profissionais que vivem o mercado de trabalho todos os dias",
   },
   {
     title: "Conecte-se e amplie <br/> sua rede de negócios",
