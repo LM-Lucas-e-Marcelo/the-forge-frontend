@@ -12,6 +12,6 @@ export const KNOW_CARDS = [
   {
     title: "Conecte-se e amplie <br/> sua rede de negócios",
     subTitle: "+2 mil Participantes",
-    text: "de Santa Catarina do Brasil, reunidos em um dia de muito networking e aprendizado.",
+    text: "de Santa Catarina e do Brasil, reunidos em um dia de muito networking e aprendizado.",
   },
 ];
