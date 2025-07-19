@@ -6,6 +6,7 @@ import { Speakers } from "../components/speakers";
 import { Testimonials } from "../components/testimonials";
 import { Tickets } from "../components/tickets";
 import { TicketsInformation } from "../components/tickets-information";
+import { Trails } from "../components/trails";
 import { WhatsappButton } from "../components/whatsapp-button";
 
 export const Home = () => {
@@ -14,6 +15,7 @@ export const Home = () => {
       <Hero />
       <Know />
       <TicketsInformation />
+      <Trails />
       <Speakers />
       <Testimonials />
       <Location />
