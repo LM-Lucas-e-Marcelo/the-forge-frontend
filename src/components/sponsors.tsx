@@ -8,6 +8,8 @@ import prefeitura from "../assets/sponsors/prefeitura.png";
 import sonmar from "../assets/sponsors/sonmar.png";
 import splenger from "../assets/sponsors/splenger.png";
 import mastermind from "../assets/sponsors/mastermind.png";
+import personaliza from "../assets/sponsors/personaliza.png";
+import pratique from "../assets/sponsors/pratique.png";
 
 export const Sponsors = () => {
   return (
@@ -61,6 +63,18 @@ export const Sponsors = () => {
         <img
           src={mastermind}
           alt="Mastermind"
+          className="h-[60px] w-auto object-contain"
+        />
+      </div>
+      <div className="flex gap-12 items-center justify-center flex-wrap">
+        <img
+          src={personaliza}
+          alt="Personaliza"
+          className="h-[40px] w-auto object-contain"
+        />
+        <img
+          src={pratique}
+          alt="Pratique"
           className="h-[60px] w-auto object-contain"
         />
       </div>
