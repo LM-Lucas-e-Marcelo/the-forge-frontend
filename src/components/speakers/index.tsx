@@ -1,6 +1,5 @@
 import { SPEAKERS } from "../../constants/speakers";
 import { Container } from "../container";
-import { SpeakerCard } from "./speaker-card";
 
 export const Speakers = () => {
   return (
@@ -12,9 +11,14 @@ export const Speakers = () => {
         <h1 className="sm:mr-40 mr-30 font-tertiary">Palestrantes</h1>
         <h1 className="sm:ml-40 ml-30 font-tertiary">Confirmados</h1>
       </span>
-      <div className="flex flex-col gap-6 mt-20 justify-center items-center">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-20">
         {SPEAKERS.map((speaker) => (
-          <SpeakerCard key={speaker.name} {...speaker} />
+          <img
+            src={speaker.imgUrl}
+            alt={speaker.name}
+            key={speaker.name}
+            className="sm:max-h-[700px] sm:h-[100%]"
+          />
         ))}
       </div>
     </Container>
