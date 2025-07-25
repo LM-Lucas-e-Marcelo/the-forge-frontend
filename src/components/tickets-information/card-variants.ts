@@ -48,5 +48,13 @@ export const cardVariants = {
       cardPrice: "text-white",
       button: "bg-white text-black",
     },
+    pink: {
+      root: "border-pink-500 bg-gradient-to-b from-pink-600/50 to-black",
+      cardTitle: "text-white",
+      lote: "text-white",
+      unity: "text-white",
+      cardPrice: "text-white",
+      button: "bg-white text-black",
+    },
   },
 };

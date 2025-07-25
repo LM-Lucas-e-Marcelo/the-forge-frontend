@@ -25,8 +25,8 @@ export const TicketsInformation = () => {
         ))}
       </div>
       <div className="flex flex-col gap-4 w-full items-center justify-center mt-10">
-        <img src={location} className="w-[80%]" alt="imagem 3d do palco" />
-        <img src={seats} className="w-[80%]" alt="imagem 3d do palco" />
+        <img src={location} className="w-[55%]" alt="imagem 3d do palco" />
+        <img src={seats} className="w-[100%]" alt="imagem 3d do palco" />
       </div>
       <FinishModal isOpen={openModal} onClose={handleToggleModal} />
     </Container>
