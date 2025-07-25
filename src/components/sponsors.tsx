@@ -5,6 +5,7 @@ import ga from "../assets/sponsors/ga.png";
 import meira from "../assets/sponsors/meira.png";
 import movimento from "../assets/sponsors/movimento.png";
 import prefeitura from "../assets/sponsors/prefeitura.png";
+import cdl from "../assets/sponsors/cdl.png";
 import sonmar from "../assets/sponsors/sonmar.png";
 import splenger from "../assets/sponsors/splenger.png";
 import mastermind from "../assets/sponsors/mastermind.png";
@@ -14,11 +15,15 @@ import pratique from "../assets/sponsors/pratique.png";
 export const Sponsors = () => {
   return (
     <div className="flex flex-col gap-12 flex-wrap items-center justify-center p-10">
-      <img
-        src={prefeitura}
-        alt="Prefeitura"
-        className="h-[40px] w-auto object-contain"
-      />
+      <div className="flex items-center gap-6">
+        <img
+          src={prefeitura}
+          alt="Prefeitura"
+          className="h-[40px] w-auto object-contain"
+        />
+        <div className="w-[2px] h-10 bg-white" />
+        <img src={cdl} alt="CDL" className="h-[40px] w-auto object-contain" />
+      </div>
       <div className="flex gap-12 items-center justify-center flex-wrap">
         <img
           src={edasuaconta}
