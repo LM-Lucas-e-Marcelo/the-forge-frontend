@@ -18,7 +18,7 @@ export const Tickets = () => {
       <div className="sm:fixed bottom-2 left-[50%] transform -translate-x-1/2 w-[500px] hidden sm:flex gap-5 justify-between p-4 rounded-2xl backdrop-blur bg-zinc-500/40 z-50">
         <section className="text-white">
           <p className="text-2xl">R$ 169,90</p>
-          <p>LOTE 1</p>
+          <p>LOTE 2</p>
         </section>
         <div
           role="button"
