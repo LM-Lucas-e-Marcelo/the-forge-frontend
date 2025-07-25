@@ -6,7 +6,6 @@ import ana from "../assets/speakers/ana.png";
 import eduardo from "../assets/speakers/eduardo.png";
 import laercio from "../assets/speakers/laercio.png";
 import aline from "../assets/speakers/aline.png";
-import dinho from "../assets/speakers/dinho.png";
 
 export const SPEAKERS = [
   {
@@ -36,10 +35,6 @@ export const SPEAKERS = [
   {
     name: "ALINE DECKER",
     imgUrl: aline,
-  },
-  {
-    name: "DINHO SILVA",
-    imgUrl: dinho,
   },
   {
     name: "ANA OLIVEIRA",
