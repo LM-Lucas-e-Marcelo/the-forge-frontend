@@ -48,7 +48,7 @@ export const TicketCard = ({
   return (
     <div className={root({ color })}>
       <h1 className={cardTitle({ color })}>{title}</h1>
-      <h2 className={lote({ color })}>1 Lote</h2>
+      <h2 className={lote({ color })}>2 Lote</h2>
       <div className="flex gap-2 items-baseline w-full justify-center mt-5">
         <strong className={unity({ color })}>R$</strong>
         <strong className={cardPrice({ color })}>{price}</strong>

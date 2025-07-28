@@ -80,7 +80,7 @@ export const TICKETS = [
     price: "2.299,90",
     perMounth: "237,86",
     times: 12,
-    color: "gray",
+    color: "black",
   },
   // {
   //   title: "MOVIMENTO Z",
