@@ -8,6 +8,7 @@ import laercio from "../assets/speakers/laercio.png";
 import aline from "../assets/speakers/aline.png";
 import juliana from "../assets/speakers/juliana.png";
 import danielrodrigues from "../assets/speakers/danielrodrigues.png";
+import harley from "../assets/speakers/harley.png";
 
 export const SPEAKERS = [
   {
@@ -45,6 +46,10 @@ export const SPEAKERS = [
   {
     name: "DANIEL RODRIGUES",
     imgUrl: danielrodrigues,
+  },
+  {
+    name: "HARLEY E EDUARDO",
+    imgUrl: harley,
   },
   {
     name: "ANA OLIVEIRA",
