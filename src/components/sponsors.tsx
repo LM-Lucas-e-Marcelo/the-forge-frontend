@@ -21,20 +21,32 @@ export const Sponsors = () => {
           alt="Prefeitura"
           className="h-[40px] w-auto object-contain"
         />
-        <div className="w-[2px] h-10 bg-white" />
-        <img src={cdl} alt="CDL" className="h-[40px] w-auto object-contain" />
       </div>
-      <div className="flex gap-12 items-center justify-center flex-wrap">
+      <div className="flex items-center gap-6">
         <img
-          src={edasuaconta}
-          alt="E da Sua Conta"
+          src={personaliza}
+          alt="Personaliza"
+          className="h-[40px] w-auto object-contain"
+        />
+        <img
+          src={meira}
+          alt="Meira"
           className="h-[60px] w-auto object-contain"
         />
         <img
-          src={alves}
-          alt="Alves"
+          src={pratique}
+          alt="Pratique"
+          className="h-[60px] w-auto object-contain"
+        />
+      </div>
+      <div className="flex gap-12 items-center justify-center flex-wrap">
+        <img
+          src={splenger}
+          alt="Splenger"
           className="h-[40px] w-auto object-contain"
         />
+        <img src={ga} alt="GA" className="h-[60px] w-auto object-contain" />
+
         <img
           src={cardelik}
           alt="Cardelik"
@@ -48,9 +60,9 @@ export const Sponsors = () => {
           className="h-[40px] w-auto object-contain"
         />
         <img
-          src={meira}
-          alt="Meira"
-          className="h-[60px] w-auto object-contain"
+          src={alves}
+          alt="Alves"
+          className="h-[40px] w-auto object-contain"
         />
         <img
           src={sonmar}
@@ -60,28 +72,16 @@ export const Sponsors = () => {
       </div>
       <div className="flex gap-12 items-center justify-center flex-wrap">
         <img
-          src={splenger}
-          alt="Splenger"
-          className="h-[40px] w-auto object-contain"
+          src={edasuaconta}
+          alt="E da Sua Conta"
+          className="h-[60px] w-auto object-contain"
         />
-        <img src={ga} alt="GA" className="h-[60px] w-auto object-contain" />
         <img
           src={mastermind}
           alt="Mastermind"
           className="h-[60px] w-auto object-contain"
         />
-      </div>
-      <div className="flex gap-12 items-center justify-center flex-wrap">
-        <img
-          src={personaliza}
-          alt="Personaliza"
-          className="h-[40px] w-auto object-contain"
-        />
-        <img
-          src={pratique}
-          alt="Pratique"
-          className="h-[60px] w-auto object-contain"
-        />
+        <img src={cdl} alt="CDL" className="h-[40px] w-auto object-contain" />
       </div>
     </div>
   );
