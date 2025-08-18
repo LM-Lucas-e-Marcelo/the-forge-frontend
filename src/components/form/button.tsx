@@ -13,7 +13,7 @@ const defaultOptions = {
 };
 
 const buttonStyles = tv({
-  base: "pb-2 pt-3 px-3 text-zinc-900 uppercase rounded-md sm:flex items-center justify-center gap-2 cursor-pointer hidden flex-row",
+  base: "pb-2 pt-3 px-3 text-zinc-900 uppercase rounded-md sm:flex items-center justify-center gap-2 cursor-pointer hidden flex-row disabled:cursor-not-allowed disabled:opacity-50",
   variants: {
     color: {
       primary: "bg-white",

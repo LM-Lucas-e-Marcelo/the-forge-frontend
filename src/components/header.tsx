@@ -78,7 +78,9 @@ export const Header = () => {
               <RxHamburgerMenu size={24} className="text-white" />
             </button>
           )}
-          <Button onClick={handleRedirectToTickets}>Quero ser forjado</Button>
+          <Button disabled onClick={handleRedirectToTickets}>
+            Quero ser forjado
+          </Button>
         </div>
       </div>
       <MobileMenu isOpen={openMobileMenu} onClose={handleToggleMobileMenu} />

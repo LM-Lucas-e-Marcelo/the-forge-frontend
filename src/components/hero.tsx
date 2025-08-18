@@ -16,7 +16,7 @@ export const Hero = () => {
       <div className="relative z-10 flex flex-col items-start justify-center h-full px-8 sm:ml-20 ml-0">
         <img src={logo} alt="Logo" className="sm:w-[350px] w-[200px]" />
         <h1 className="text-white sm:text-7xl text-3xl max-w-[600px] sm:text-nowrap text-wrap">
-          VAI TRANSFORMAR VOCÊ!
+          Nos vemos em 2026!
         </h1>
         <div className="text-white absolute bottom-10">
           <p>Grande Florianópolis</p>
